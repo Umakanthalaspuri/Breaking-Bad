@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Orders Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #fff;
+      margin-top: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    th, td {
+      padding: 12px 15px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #007bff;
+      color: #fff;
+    }
+
+    tr:hover {
+      background-color: #f1f1f1;
+    }
+
+    .status {
+      padding: 5px 10px;
+      border-radius: 5px;
+      color: white;
+      font-weight: bold;
+    }
+
+    .status.pending {
+      background-color: orange;
+    }
+
+    .status.completed {
+      background-color: green;
+    }
+
+    .status.cancelled {
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Customer Orders</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Order ID</th>
+        <th>Customer</th>
+        <th>Product</th>
+        <th>Quantity</th>
+        <th>Price ($)</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>#1001</td>
+        <td>John Doe</td>
+        <td>Smartphone</td>
+        <td>2</td>
+        <td>1200</td>
+        <td><span class="status pending">Pending</span></td>
+      </tr>
+      <tr>
+        <td>#1002</td>
+        <td>Jane Smith</td>
+        <td>Laptop</td>
+        <td>1</td>
+        <td>1500</td>
+        <td><span class="status completed">Completed</span></td>
+      </tr>
+      <tr>
+        <td>#1003</td>
+        <td>Mike Johnson</td>
+        <td>Headphones</td>
+        <td>3</td>
+        <td>300</td>
+        <td><span class="status cancelled">Cancelled</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
